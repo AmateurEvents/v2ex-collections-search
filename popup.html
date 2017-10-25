@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta charset="utf-8" />
+        <title>v2ex topics search</title>
+
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        <!-- bootstrap & fontawesome -->
+        <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/css/font-awesome.min.css" />
+
+        <!-- text fonts -->
+        <link rel="stylesheet" href="static/css/fonts.googleapis.com.css" />
+
+        <!-- ace styles -->
+        <link rel="stylesheet" href="static/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+        <link rel="stylesheet" href="static/css/ladda-themeless.min.css">
+        <link rel="stylesheet" href="static/css/prism.css" />
+        <link rel="stylesheet" href="static/css/style.css" />
+    </head>
+
+    <body class="no-skin">
+
+        <div class="main-container ace-save-state" id="main-container">
+
+            <div class="main-content">
+                <div class="main-content-inner">
+
+                    <div class="page-content">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div>
+                                    <div class="row search-page" id="search-page-1">
+                                        <div class="col-xs-12">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12">
+                                                    <div class="search-area well well-sm">
+                                                        <div class="row">
+                                                            <div class="col-xs-10 col-sm-10 col-md-10">
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control" name="keywords" placeholder="Look within results" />
+                                                                    <div class="input-group-btn">
+                                                                        <button type="button" name="search" class="btn btn-default no-border btn-sm ladda-button" data-style="zoom-in">
+                                                                            <i class="ace-icon fa fa-search icon-on-right bigger-110"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-2 col-sm-2 col-md-2">
+                                                                <button class="btn btn-sm btn-primary ladda-button" name="sync" data-style="zoom-in">同步</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="search-filter">
+                                                            <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 10px">
+                                                                <div class="radio">
+                                                                    <label>
+                                                                        <input name="form-field-radio" type="radio" class="ace" checked value="title" />
+                                                                        <span class="lbl"> 搜标题</span>
+                                                                    </label>
+                                                                    <label>
+                                                                        <input name="form-field-radio" type="radio" class="ace" value="reply"/>
+                                                                        <span class="lbl"> 搜评论</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row items">
+                                                    </div>
+                                                    <div class="row">
+                                                        <div id="page" class="col-xs-12 page_div">
+                                                            <a id="firstPage">首页</a>
+                                                            <a id="prePage">上一页</a>
+                                                            <a id="nextPage">下一页</a>
+                                                            <a id="lastPage">尾页</a>
+                                                            <span class="totalPages"> 共
+                                                                <span>0</span>页 
+                                                            </span>
+                                                            <span class="totalSize"> 共
+                                                                <span>0</span>
+                                                                条记录 
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- PAGE CONTENT ENDS -->
+                            </div><!-- /.col -->
+                        </div><!-- /.row -->
+                    </div><!-- /.page-content -->
+                </div>
+            </div><!-- /.main-content -->
+
+
+        </div><!-- /.main-container -->
+
+        <!-- basic scripts -->
+
+        <!--[if !IE]> -->
+        <script src="static/js/jquery-2.1.4.min.js"></script>
+        <script src="static/js/spin.min.js"></script>
+        <script src="static/js/ladda.min.js"></script>
+        <script src="static/js/paging.js"></script>
+        <script src="static/js/main.js"></script>
+        <!-- <![endif]-->
+        <!-- <script>
+            function get_info_from_v2ex(){
+                $("#Main div[class='header'] strong").text()
+                $(".box span[class='item_title'] a")
+            }
+        </script> -->
+    </body>
+</html>
