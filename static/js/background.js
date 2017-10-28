@@ -70,6 +70,7 @@ function send_message(tabs){
                         }
                     });//end  sendMessage
                 } else {
+                    // 检测是否有其他同步任务正在运行
                     var total_length = result.rows[0].length + result.rows[1].length
                     console.log("开始120s检测是否有其他同步任务")
                     setTimeout(function(){get_info_change(total_length, tabs)}, 120000)

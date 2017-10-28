@@ -61,12 +61,14 @@ $(document).ready(function(){
         })
     })
 
+    // 打开外部链接
     $body = $(document.body)
     $body.on('click', '.external_link', function() {
         window.open("http://v2ex.com/t/" + $(this).attr("value"))
         // window.open("http://v2ex.com/t/")
     })
 
+    // 检测回车事件
     $("input[name='keywords']").bind('keydown', function(event) {
         if (event.keyCode == 13) {
             $("button[name='search']").click()
