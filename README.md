@@ -9,9 +9,12 @@
 
 #### 使用
 
+    git clone https://github.com/AmateurEvents/v2ex-collections-search.git
+    开启chrome开发者模式，加载插件即可
+
 ![插件演示](static/images/v2ex-collections-search-display.gif)
 
-* 安装启用插件
+* 启用插件
 * 打开并登陆v2ex
 * 打开我的搜藏页面，点击插件的同步按钮，即可开启同步，打开控制台可以看到同步进度，关掉页面就关掉了同步(同步的时候最好关闭Adblock插件)
 * 同步完成后即可进行搜索
